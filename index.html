@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+</head>
+
+<body onload="carregarPergunta()">
+
+    <header id="informacoes">
+
+        <article>
+            <p><b id="titulo">Sobre o teste</b>: É preciso ter um conhecimento
+                mínimo
+                sobre o mundo de Harry Potter para conseguir
+                responder as
+                perguntas. Apenas uma das cinco alternativas é
+                correta. Ao
+                final você receberá suas moedas de recompensa e uma
+                da 6
+                notas possíveis em um N.O.M. sendo elas: Ótimo,
+                Excede
+                Expectativas, Aceitável, Péssimo, Deplorável e
+                Trasgo.
+                Respectivamente acordo com seu despenho. </p>
+        </article>
+    </header>
+    <section class="principal">
+        
+        <div id="box">
+            <iframe id="comecar" >
+                <!-- AQUI É A TELA INICIAL EXIBIDA AO USUÁRIO-->
+            </iframe>
+            <button id="btn" onclick="comecarQuiz()">Começar</button>
+
+            <div id="questionario">
+                <!--ESSA DIV FICA ESCONDIDA. SÓ É EXIBIDA QUANDO O USUÁRIO CLICA NO BOTÃO DE COMEÇAR-->
+                <h2 id="question">1) Quem foi o autor(a) do livro 'Guia
+                    de
+                    Transfiguração para Iniciantes'?</h2>
+
+                <hr />
+                    <label class="options" >
+                        <input type="radio" name="questionOption" value="1" />
+                        <span id="opt1">Thaddeus Thurkell
+                        </span>
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="questionOption" value="2" />
+                        <span id="opt2">Mirabella Plunkett
+                        </span>
+                    </label>
+                    <label class="options" >
+                        <input type="radio" name="questionOption" value="3"   />
+                        <span id="opt3">Falco Aesalon
+                        </span>
+                    </label>
+                    <label class="options">
+                        <input type="radio" name="questionOption" value="4"  />
+                        <span id="opt4">Emerico Switch
+                        </span>
+                    </label>
+                    <label class="options" >
+                        <input type="radio" name="questionOption" value="5"   />
+                        <span id="opt5">Minerva McGonagall
+                        </span>
+                    </label>
+                <hr />      
+            </div>
+            <button id="botao" onclick="verificarResposta()">Próxima >></button>
+        </div>
+    </section>
+
+    <aside id="lateral">
+        <label id="presente">Recompensas:</label>
+        <!--Aqui serão manipulados por JS o premios do jogador de acordo com seu desempenho-->
+        <ul>
+            <li id="p1"></li>
+            <li id="p2"></li>
+            <li id="p3"></li>
+            <li id="p4"></li>
+            <li id="p5"></li>
+            <li id="p6"></li>
+            <li id="p7"></li>
+            <li id="p8"></li>
+            <li id="p9"></li>
+            <li id="p10"></li>
+        </ul>
+    </aside>
+    <script type="text/javascript" src="js/Queue.js"></script>
+    <script type="text/javascript" src="js/Stack.js"></script>
+    <script type="text/javascript" src="js/ListaDuplamenteEncadeada.js"></script>
+    <script type="text/javascript" src="js/Perguntas.js"></script>
+    <script type="text/javascript" src="js/Quiz.js"></script>
+</body>
+
+</html>
